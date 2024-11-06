@@ -1,0 +1,16 @@
+How to convert the pytorch weights to tensorflow weights?
+Run these commands one by one:
+python pytorch-to-onnx.py
+# Produces model.onnx
+python batch-corrector.py 
+# Produces modified_model.onnx
+python onnx_to_tf.py 
+# Produces model_tf folder
+python tf_test.py
+# Checks if the model loads properly
+python image_test_tf.py 
+# Loads the model and produces predictions
+
+
+#Pre-converted weights and the middle steps are at : https://drive.google.com/drive/folders/1giWgc55fro740-ygEisx-CXvCQ8NL9Tr?usp=sharing
+#Final model is model_tf

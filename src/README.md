@@ -3,6 +3,7 @@ Download the model checkpoint from: https://drive.google.com/drive/folders/1W92o
 Evaluation scripts: 
 
 Codalab_saliency_evaluation_script_with_print.py
+
 eval_on_validation_3_metrics.py
 
 If KL metric is Nan, it can be a division by zero error. Please check if the prediction or ground truth is all zeros. 
